@@ -87,14 +87,25 @@ body {
   place-content: center;
   min-height: 100vh;
   background-color: var(--clr-primary-300);
+  font-size: 12px;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-200);
   /*background-image: url(images/bg-pattern-top.svg); */
 }
 
 hr {
   color: var(--clr-neutral-200);
-  opacity: 0.3;
-  border: none;
+  opacity: 0.8;
   border-top: 1px;
+  margin: 1.2rem 0;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1.7rem;
+  justify-content: space-around;
 }
 
 .profile {
@@ -106,4 +117,57 @@ hr {
   overflow: hidden;
   border-radius: 1rem;
   padding-bottom: 1.5rem;
+  max-width: 275px;
+}
+
+.avatar {
+  border-radius: 100%;
+  border: 5px solid white;
+  position: absolute;
+  translate: 95px 65px;
+  width: 90px;
+}
+
+.profile-text {
+  padding-top: 3.5rem;
+}
+
+.title {
+  font-size: 16px;
+  color: var(--clr-primary-500);
+  padding-bottom: 0.25rem;
+}
+
+.age {
+  color: var(--clr-primary-200);
+  font-weight: var(--fw-regular);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 10px;
+  font-family: var(--ff-base);
+  color: var(--clr-primary-500);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.attribution a:hover {
+  color: white;
+}
+
+.stats {
+  font-weight: var(--fw-regular);
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.flex-group span {
+  font-size: 14px;
+  letter-spacing: 0;
+  color: var(--clr-primary-500);
+  font-weight: var(--fw-bold);
 }
